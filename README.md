@@ -250,6 +250,13 @@ console.log(`Flare Equivalent: ${ethers.formatEther(flareEquivalent)} FLR`);
 - Platform-wide volume and performance metrics
 
 ---
+## ⚠️ Limitations & Considerations
+
+While our system demonstrates effective cross-chain currency conversion, it’s important to acknowledge current limitations:
+
+- Oracle Dependency Our solution relies on Flare’s FTSO oracles for real-time XRP/USD and FLR/USD pricing. This introduces potential latency if oracle updates are delayed, and full availability depends on the health of the oracle network.
+- Network Costs On the Flare Network, transaction fees (gas costs) may increase under heavy network load. While typically lower than Ethereum mainnet fees, this variability could impact large-scale or high-frequency conversions.
+---
 
 ## 🌐 **Network Support**
 
