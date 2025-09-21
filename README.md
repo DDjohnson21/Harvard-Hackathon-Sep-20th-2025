@@ -227,7 +227,7 @@ console.log(`Flare Equivalent: ${ethers.formatEther(flareEquivalent)} FLR`);
 
 ### **1. Cross-Chain Currency Bridge**
 
-- First XRP to USD converter leveraging Flare Network oracles
+- XRP to USD converter leveraging Flare Network oracles
 - Real-time oracle-based pricing for accurate conversions
 - Seamless XRPL to Flare Network integration
 
