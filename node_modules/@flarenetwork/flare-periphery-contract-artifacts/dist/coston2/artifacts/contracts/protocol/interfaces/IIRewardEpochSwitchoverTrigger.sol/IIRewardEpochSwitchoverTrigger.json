@@ -1,0 +1,25 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint24",
+        "name": "_currentRewardEpochId",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_currentRewardEpochExpectedEndTs",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_rewardEpochDurationSeconds",
+        "type": "uint64"
+      }
+    ],
+    "name": "triggerRewardEpochSwitchover",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

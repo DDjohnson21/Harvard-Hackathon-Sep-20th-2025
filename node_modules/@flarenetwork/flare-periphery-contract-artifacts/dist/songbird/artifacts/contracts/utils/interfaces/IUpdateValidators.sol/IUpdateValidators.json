@@ -1,0 +1,9 @@
+[
+  {
+    "inputs": [],
+    "name": "updateActiveValidators",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

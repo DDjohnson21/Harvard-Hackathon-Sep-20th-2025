@@ -1,0 +1,51 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_finalizingPriceEpochId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_currentPriceEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "chillNonrevealingDataProviders",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCurrentRandom",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_currentRandom",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCurrentRandomWithQuality",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_currentRandom",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_goodRandom",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

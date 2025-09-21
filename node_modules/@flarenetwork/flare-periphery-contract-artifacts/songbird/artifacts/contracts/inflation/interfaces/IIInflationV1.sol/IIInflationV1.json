@@ -1,0 +1,133 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAnnum",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "recognizedInflationWei",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "daysInAnnum",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startTimeStamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endTimeStamp",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "contract IIInflationReceiver",
+                    "name": "inflationReceiver",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "authorizedInflationWei",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "lastDailyAuthorizedInflationWei",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "inflationTopupRequestedWei",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "inflationTopupReceivedWei",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "inflationTopupWithdrawnWei",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct IIInflationV1.RewardServiceState[]",
+                "name": "rewardServices",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalAuthorizedInflationWei",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalInflationTopupRequestedWei",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalInflationTopupReceivedWei",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalInflationTopupWithdrawnWei",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IIInflationV1.RewardServicesState",
+            "name": "rewardServices",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IIInflationV1.InflationAnnumState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lastAuthorizationTs",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardEpochStartedTs",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

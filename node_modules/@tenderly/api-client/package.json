@@ -1,0 +1,73 @@
+{
+  "name": "@tenderly/api-client",
+  "author": "Tenderly",
+  "license": "MIT",
+  "homepage": "https://tenderly.co",
+  "description": "",
+  "version": "1.1.0",
+  "main": "internal/lib/tenderly-lib.js",
+  "types": "internal/lib/tenderly-lib.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tenderly/hardhat-tenderly.git"
+  },
+  "scripts": {
+    "build": "rm -rf build-test && rm -f tsconfig.tsbuildinfo && tsc --build .",
+    "clean": "rm -rf node_modules && rm -rf build-test && rm -rf common && rm -rf internal && rm -rf types && rm -rf utils && rm -f tsconfig.tsbuildinfo",
+    "lint": "yarn run prettier --check && yarn run eslint",
+    "lint:fix": "yarn run prettier --write && yarn run eslint --fix",
+    "eslint": "eslint 'src/**/*.ts'",
+    "prettier": "prettier \"**/*.{js,md,json}\"",
+    "prepublishOnly": "yarn run build"
+  },
+  "files": [
+    "common/",
+    "internal/",
+    "types/",
+    "utils/",
+    "*.d.ts",
+    "*.d.ts.map",
+    "*.js",
+    "*.js.map",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^18.7.15",
+    "@types/prompts": "^2.0.14",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.6.2",
+    "hardhat": "^2.22.11",
+    "@nomicfoundation/hardhat-ethers": "^3.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cli-table3": "^0.6.2",
+    "commander": "^9.4.0",
+    "js-yaml": "^4.1.0",
+    "open": "^8.4.0",
+    "prompts": "^2.4.2",
+    "tslog": "^4.4.0",
+    "dotenv": "^16.4.5"
+  },
+  "peerDependencies": {
+    "ts-node": "*",
+    "typescript": "*"
+  },
+  "peerDependenciesMeta": {
+    "ts-node": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  }
+}

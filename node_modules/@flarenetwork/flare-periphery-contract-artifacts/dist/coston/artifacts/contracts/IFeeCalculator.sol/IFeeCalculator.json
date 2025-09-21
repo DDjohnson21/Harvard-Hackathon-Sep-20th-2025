@@ -1,0 +1,40 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes21[]",
+        "name": "_feedIds",
+        "type": "bytes21[]"
+      }
+    ],
+    "name": "calculateFeeByIds",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_indices",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "calculateFeeByIndices",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

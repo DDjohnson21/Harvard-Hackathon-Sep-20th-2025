@@ -1,0 +1,15 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint24",
+        "name": "_rewardEpochId",
+        "type": "uint24"
+      }
+    ],
+    "name": "triggerVoterRegistration",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

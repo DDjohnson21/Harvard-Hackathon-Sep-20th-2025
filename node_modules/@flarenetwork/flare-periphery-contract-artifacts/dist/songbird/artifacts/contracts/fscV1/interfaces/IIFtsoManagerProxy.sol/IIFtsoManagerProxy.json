@@ -1,0 +1,54 @@
+[
+  {
+    "inputs": [],
+    "name": "fastUpdater",
+    "outputs": [
+      {
+        "internalType": "contract IIFastUpdaterView",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fastUpdatesConfiguration",
+    "outputs": [
+      {
+        "internalType": "contract IFastUpdatesConfiguration",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "flareSystemsManager",
+    "outputs": [
+      {
+        "internalType": "contract IFlareSystemsManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "relay",
+    "outputs": [
+      {
+        "internalType": "contract IRelay",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

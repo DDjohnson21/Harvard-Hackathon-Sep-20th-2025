@@ -1,0 +1,25 @@
+[
+  {
+    "inputs": [],
+    "name": "getTokenPoolSupplyData",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_foundationAllocatedFundsWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_totalInflationAuthorizedWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_totalClaimedWei",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

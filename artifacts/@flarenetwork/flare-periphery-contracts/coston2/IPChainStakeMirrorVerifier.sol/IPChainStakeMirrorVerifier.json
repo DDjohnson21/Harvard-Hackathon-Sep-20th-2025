@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IPChainStakeMirrorVerifier",
+  "sourceName": "@flarenetwork/flare-periphery-contracts/coston2/IPChainStakeMirrorVerifier.sol",
+  "abi": [],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

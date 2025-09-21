@@ -1,0 +1,9 @@
+[
+  {
+    "inputs": [],
+    "name": "receiveMinting",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

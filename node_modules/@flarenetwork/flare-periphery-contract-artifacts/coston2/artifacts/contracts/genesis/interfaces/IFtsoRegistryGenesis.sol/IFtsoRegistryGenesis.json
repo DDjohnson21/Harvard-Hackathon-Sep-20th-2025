@@ -1,0 +1,21 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_indices",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getFtsos",
+    "outputs": [
+      {
+        "internalType": "contract IFtsoGenesis[]",
+        "name": "_ftsos",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

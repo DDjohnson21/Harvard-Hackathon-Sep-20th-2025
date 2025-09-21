@@ -1,0 +1,140 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32[]",
+            "name": "merkleProof",
+            "type": "bytes32[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "attestationType",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "sourceId",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint64",
+                "name": "votingRound",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "lowestUsedTimestamp",
+                "type": "uint64"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "bytes32Field",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "boolField",
+                    "type": "bool"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "templateStructField",
+                        "type": "bytes32"
+                      },
+                      {
+                        "internalType": "uint256[]",
+                        "name": "uintArrayField",
+                        "type": "uint256[]"
+                      },
+                      {
+                        "internalType": "bool[]",
+                        "name": "boolArrayField",
+                        "type": "bool[]"
+                      }
+                    ],
+                    "internalType": "struct ITypeTemplate.RequestSubstruct1",
+                    "name": "requestSubstruct1",
+                    "type": "tuple"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "templateStructField",
+                        "type": "bytes32"
+                      },
+                      {
+                        "internalType": "int256[]",
+                        "name": "intArrayField",
+                        "type": "int256[]"
+                      },
+                      {
+                        "internalType": "bool[]",
+                        "name": "boolArrayField",
+                        "type": "bool[]"
+                      }
+                    ],
+                    "internalType": "struct ITypeTemplate.RequestSubstruct2[]",
+                    "name": "requestSubstruct2Array",
+                    "type": "tuple[]"
+                  }
+                ],
+                "internalType": "struct ITypeTemplate.RequestBody",
+                "name": "requestBody",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "templateResponseField",
+                    "type": "bytes32"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "templateStructField",
+                        "type": "bytes32"
+                      }
+                    ],
+                    "internalType": "struct ITypeTemplate.ResponseSubstruct1[]",
+                    "name": "responseSubstruct1Array",
+                    "type": "tuple[]"
+                  }
+                ],
+                "internalType": "struct ITypeTemplate.ResponseBody",
+                "name": "responseBody",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct ITypeTemplate.Response",
+            "name": "data",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ITypeTemplate.Proof",
+        "name": "_proof",
+        "type": "tuple"
+      }
+    ],
+    "name": "verifyTypeTemplate",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "_proved",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

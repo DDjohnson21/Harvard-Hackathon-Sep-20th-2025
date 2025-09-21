@@ -1,0 +1,54 @@
+[
+  {
+    "inputs": [],
+    "name": "getRandomNumber",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_randomNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isSecureRandom",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_randomTimestamp",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_votingRoundId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRandomNumberHistorical",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_randomNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isSecureRandom",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_randomTimestamp",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

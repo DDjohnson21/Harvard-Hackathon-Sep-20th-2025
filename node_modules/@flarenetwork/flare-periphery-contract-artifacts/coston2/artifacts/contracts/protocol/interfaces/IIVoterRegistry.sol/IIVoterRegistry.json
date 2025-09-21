@@ -1,0 +1,623 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes20",
+        "name": "beneficiary",
+        "type": "bytes20"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "untilRewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "BeneficiaryChilled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint24",
+        "name": "rewardEpochId",
+        "type": "uint24"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "signingPolicyAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "submitAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "submitSignaturesAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "publicKeyPart1",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "publicKeyPart2",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "registrationWeight",
+        "type": "uint256"
+      }
+    ],
+    "name": "VoterRegistered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "VoterRemoved",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes20",
+        "name": "_beneficiary",
+        "type": "bytes20"
+      }
+    ],
+    "name": "chilledUntilRewardEpochId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "createSigningPolicySnapshot",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "_signingPolicyAddresses",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint16[]",
+        "name": "_normalisedWeights",
+        "type": "uint16[]"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_normalisedWeightsSum",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getNumberOfRegisteredVoters",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_signingPolicyAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getPublicKeyAndNormalisedWeight",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_publicKeyPart1",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_publicKeyPart2",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_normalisedWeight",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_normalisedWeightsSumOfVotersWithPublicKeys",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredDelegationAddresses",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "_delegationAddresses",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredNodeIds",
+    "outputs": [
+      {
+        "internalType": "bytes20[][]",
+        "name": "_nodeIds",
+        "type": "bytes20[][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredPublicKeys",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "_parts1",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_parts2",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredSigningPolicyAddresses",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "_signingPolicyAddresses",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredSubmitAddresses",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredSubmitSignaturesAddresses",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "_signingPolicyAddresses",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredVoters",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredVotersAndNormalisedWeights",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "_voters",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint16[]",
+        "name": "_normalisedWeights",
+        "type": "uint16[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRegisteredVotersAndRegistrationWeights",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "_voters",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_registrationWeights",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_voter",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getVoterNormalisedWeight",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "_normalisedWeight",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_voter",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getVoterRegistrationWeight",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_registrationWeight",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_signingPolicyAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getVoterWithNormalisedWeight",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_voter",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_normalisedWeight",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWeightsSums",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "_weightsSum",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_normalisedWeightsSum",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_normalisedWeightsSumOfVotersWithPublicKeys",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_voter",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isVoterRegistered",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxVoters",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "newSigningPolicyInitializationStartBlockNumber",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "publicKeyRequired",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_voter",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IVoterRegistry.Signature",
+        "name": "_signature",
+        "type": "tuple"
+      }
+    ],
+    "name": "registerVoter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rewardEpochId",
+        "type": "uint256"
+      }
+    ],
+    "name": "setNewSigningPolicyInitializationStartBlockNumber",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_voter",
+        "type": "address"
+      }
+    ],
+    "name": "systemRegistration",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

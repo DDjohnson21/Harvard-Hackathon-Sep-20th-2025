@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AssetManagerSettings",
+  "sourceName": "@flarenetwork/flare-periphery-contracts/coston2/data/AssetManagerSettings.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea264697066735822122072719409e49b70b5b6792a8cd48534f3948569f2d7505514d36998cc31f9226264736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea264697066735822122072719409e49b70b5b6792a8cd48534f3948569f2d7505514d36998cc31f9226264736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

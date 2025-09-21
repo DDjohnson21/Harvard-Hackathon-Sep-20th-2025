@@ -1,0 +1,111 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIFtso",
+        "name": "_ftsoContract",
+        "type": "address"
+      }
+    ],
+    "name": "addFtso",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_symbol",
+        "type": "string"
+      }
+    ],
+    "name": "getFtsoBySymbol",
+    "outputs": [
+      {
+        "internalType": "contract IIFtso",
+        "name": "_activeFtsoAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_symbol",
+        "type": "string"
+      }
+    ],
+    "name": "getFtsoIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_assetIndex",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getSupportedFtsos",
+    "outputs": [
+      {
+        "internalType": "contract IIFtso[]",
+        "name": "_ftsos",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getSupportedSymbols",
+    "outputs": [
+      {
+        "internalType": "string[]",
+        "name": "_supportedSymbols",
+        "type": "string[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIFtso",
+        "name": "_ftso",
+        "type": "address"
+      }
+    ],
+    "name": "removeFtso",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIFtsoManager",
+        "name": "_ftsoManager",
+        "type": "address"
+      }
+    ],
+    "name": "setFtsoManagerAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

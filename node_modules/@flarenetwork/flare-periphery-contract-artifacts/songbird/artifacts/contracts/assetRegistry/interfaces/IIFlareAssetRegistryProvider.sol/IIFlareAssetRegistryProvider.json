@@ -1,0 +1,57 @@
+[
+  {
+    "inputs": [],
+    "name": "allAssets",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "assetType",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_nameHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getAttribute",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "_defined",
+        "type": "bool"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_value",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

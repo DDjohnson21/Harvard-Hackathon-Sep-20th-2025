@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AvailableAgentInfo",
+  "sourceName": "@flarenetwork/flare-periphery-contracts/coston2/data/AvailableAgentInfo.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea26469706673582212204c773ff577952050ec6208f0dc2f43ab69230f80d6c933546631efaed61232b064736f6c63430008190033",
+  "deployedBytecode": "0x600080fdfea26469706673582212204c773ff577952050ec6208f0dc2f43ab69230f80d6c933546631efaed61232b064736f6c63430008190033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

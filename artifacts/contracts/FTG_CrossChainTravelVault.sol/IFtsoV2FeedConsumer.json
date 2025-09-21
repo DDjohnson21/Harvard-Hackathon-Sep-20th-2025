@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IFtsoV2FeedConsumer",
+  "sourceName": "contracts/FTG_CrossChainTravelVault.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes21",
+          "name": "feedId",
+          "type": "bytes21"
+        }
+      ],
+      "name": "getFeedById",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint64",
+          "name": "timestamp",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint8",
+          "name": "decimals",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

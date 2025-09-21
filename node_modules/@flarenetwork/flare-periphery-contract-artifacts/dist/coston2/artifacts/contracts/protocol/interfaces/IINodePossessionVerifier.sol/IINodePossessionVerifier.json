@@ -1,0 +1,30 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_voter",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes20",
+        "name": "_nodeId",
+        "type": "bytes20"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_certificateRaw",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyNodePossession",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
