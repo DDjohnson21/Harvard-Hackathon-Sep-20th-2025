@@ -386,20 +386,6 @@ yarn hardhat run scripts/XRP_Conversion_Demo.ts --network coston2
 - ✅ **Demo Completeness**: Working end-to-end demonstration
 
 ---
-
-## 🎬 **Demo Video**
-
-Watch our live demonstration of the FTG Cross-Chain Travel Vault in action:
-
-<!-- Replace this URL with your actual GitHub video URL after uploading -->
-
-https://github.com/user-attachments/assets/your-video-id-here
-
-<!-- Alternative: If you prefer to use the local file -->
-<!-- ![Demo Video](./Screen%20Recording%202025-09-21%20at%2010.48.11%20AM.mov) -->
-
-_Note: The demo shows real-time XRP to USD conversion, batch processing, and oracle-powered pricing on Coston2 testnet._
-
 ### **Demo Highlights**
 
 - ⚡ **Live XRP Conversion**: 100 XRP → $62 USD (with optional FLR equivalent)
