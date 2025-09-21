@@ -279,17 +279,6 @@ yarn hardhat verify --network flare <CONTRACT_ADDRESS> <CONSTRUCTOR_ARGS>
 
 ---
 
-## 🔐 **Security Features**
-
-- **ReentrancyGuard** protection on fund operations
-- **Access Control** with member-only functions
-- **Governance Voting** for group vault decisions
-- **Transaction Verification** to prevent double-spending
-- **Oracle Price Validation** for accurate conversions
-- **Smart Account Delegation** with proper authorization
-
----
-
 ## 🎉 **Why This Matters for Currency Conversion**
 
 ### **Traditional Problems**
