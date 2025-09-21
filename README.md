@@ -256,17 +256,6 @@ While our system demonstrates effective cross-chain currency conversion, it’s 
 
 - Oracle Dependency Our solution relies on Flare’s FTSO oracles for real-time XRP/USD and FLR/USD pricing. This introduces potential latency if oracle updates are delayed, and full availability depends on the health of the oracle network.
 - Network Costs On the Flare Network, transaction fees (gas costs) may increase under heavy network load. While typically lower than Ethereum mainnet fees, this variability could impact large-scale or high-frequency conversions.
----
-
-## 🌐 **Network Support**
-
-| Network             | Purpose                     | Status         |
-| ------------------- | --------------------------- | -------------- |
-| **Flare Mainnet**   | Production deployment       | ✅ Ready       |
-| **Coston2 Testnet** | Development & testing       | ✅ Active      |
-| **Songbird**        | Canary network testing      | ✅ Ready       |
-| **XRPL Mainnet**    | XRP payments & verification | 🔄 Integration |
-| **XRPL Testnet**    | Development testing         | 🔄 Integration |
 
 ---
 
